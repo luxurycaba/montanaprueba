@@ -4,56 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONTANA 22</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        #navbar {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000000;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            z-index: 1;
-        }
-        #navbar a {
-            text-decoration: none;
-            color: rgb(185, 22, 180);
-        }
-        #iframe-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="navbar"><a href="http://wa.link/montana22vip" target="_blank" rel="noopener noreferrer">CLIC ACÁ PARA CARGAR FICHAS!</a></div>
+    <div id="navbar">
+        <a href="http://wa.link/montana22vip" target="_blank" rel="noopener noreferrer">
+            <ul>
+                <li class="arrow">🢂</li>
+                <li>C</li>
+                <li>A</li>
+                <li>R</li>
+                <li>G</li>
+                <li>A</li>
+                <li>R</li>
+                <li>&nbsp;</li>
+                <li>F</li>
+                <li>I</li>
+                <li>C</li>
+                <li>H</li>
+                <li>A</li>
+                <li>S</li>
+                <li class="arrow">🢀</li>
+            </ul>
+        </a>
+    </div>
+
     <div id="iframe-container">
         <iframe id="iframe" src="https://www.citygame.casino"></iframe>
     </div>
 
     <script>
         document.getElementById('iframe').onload = function() {
-            document.getElementById('navbar').style.display = 'block';
+            document.getElementById('navbar').style.display = 'flex';
             document.getElementById('iframe-container').style.top = '50px';
             document.getElementById('iframe-container').style.height = 'calc(100% - 50px)';
         };
