@@ -32,7 +32,8 @@ ul li {
     animation: anim 1s infinite linear;
 }
 .arrow{
-    margin: -0.1em;
+    margin: -0.2em;
+    font-size: 1.5em;
 }
 #iframe-container {
     position: absolute;
