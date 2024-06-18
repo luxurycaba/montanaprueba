@@ -21,6 +21,7 @@ html, body {
 }
 ul {
     display: flex;
+    padding: 0;
 }
 ul li {
     list-style: none;
@@ -31,9 +32,15 @@ ul li {
     text-shadow: none;
     animation: anim 1s infinite linear;
 }
-.arrow{
-    margin: -0.2em;
+.arrow {
+    margin: -0.2em 0;
     font-size: 1.5em;
+    padding-left: 8px;
+}
+.arrow2 {
+    margin: -0.2em 0;
+    font-size: 1.5em;   
+    padding-left: 8px; 
 }
 #iframe-container {
     position: absolute;
